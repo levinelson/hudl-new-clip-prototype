@@ -1,0 +1,76 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Clip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://sc-ui.hudl.com/uniform-ui-css/0.12.10/uniform-ui.css.gz">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+  <body>
+    <main>
+    <div class="video-and-timeline">
+      <div class="video">
+        <video id="video" autoplay muted loop>
+          <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="video-controls"></div>
+      </div>
+      <div class="trimmer-wrap">
+        <div class="tick"></div>
+        <div class="tick"></div>
+        <div class="tick"></div>
+        <div class="tick"></div>
+        <div class="tick"></div>
+        <div class="tick"></div>
+        <div class="tick"></div>
+        <div class="tick"></div>
+        <div class="tick"></div>
+        <div class="tick"></div>
+        <div class="tick"></div>
+        <div class="trimmer">
+          <div class="handle"></div>
+          <div class="playhead"></div>
+          <div class="handle"></div>
+        </div>
+      </div>
+    </div>
+    <div class="organizer">
+      <div class="new-clip uni-env--dark">
+        <div class="_header">
+          <div class="uni-form__item">
+            <label class="uni-form__label">Clip Title</label>
+            <input type="text" id="clip-title" class="uni-form__input" placeholder="2pt Make @ Gretna">
+          </div>
+        </div>
+        <div class="_discussion">
+          <div class="_new-comment">
+            <div class="_avatar"></div>
+            <input type="text" class="uni-form__input" placeholder="Add a comment">
+            <div class="uni-btn uni-btn--small">Draw</div>
+          </div>
+        </div>
+        <div class="_confirm">
+          <div class="uni-text--small uni-text--additional">
+            Press <strong>enter</strong> to save
+          </div>
+          <div>
+            <div class="uni-btn--cancel">Cancel</div>
+            <div class="uni-btn--primary" id="save-clip">Save</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="button-container">
+        <div class="new-clip-button" id="new-clip-button">
+          <div class="front-side">New Clip</div>
+          <div class="back-side">End Clip</div>
+        </div>
+      </div>
+    </div>
+    </main>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.js"></script>
+  <script src="scripts/script.js"></script>
+</html>
